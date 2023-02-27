@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="452.0" prefWidth="687.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.colors.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane prefHeight="440.0" prefWidth="647.0">
+         <children>
+            <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="51.0" layoutX="214.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="51.0" layoutX="214.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" width="200.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Rectangle>
+            <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="51.0" layoutX="214.0" layoutY="104.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Label layoutX="231.0" layoutY="47.0" text="COUNTRY FLAGS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="russiabtn" layoutX="46.0" layoutY="306.0" mnemonicParsing="false" onAction="#changerussia" text="RUSSIA" textFill="#402424" />
+            <Button fx:id="botswanabtn" layoutX="113.0" layoutY="331.0" mnemonicParsing="false" onAction="#changebotswana" text="BOTSWANA" />
+            <Button fx:id="lesothobtn" layoutX="205.0" layoutY="306.0" mnemonicParsing="false" onAction="#changelesotho" text="LESOTHO" />
+            <Button fx:id="germanybtn" layoutX="288.0" layoutY="331.0" mnemonicParsing="false" onAction="#changegermany" text="GERMANY" />
+            <Button fx:id="spainbtn" layoutX="376.0" layoutY="306.0" mnemonicParsing="false" onAction="#changespain" text="SPAIN" />
+            <Button fx:id="clearbtn" layoutX="495.0" layoutY="306.0" mnemonicParsing="false" onAction="#clear" text="CLEAR" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
